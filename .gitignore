@@ -24,3 +24,9 @@ decimal_rs-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Ignore file created by stress tests
+stress_output.txt
+
+# Ignore compiled rustler artifacts
+priv/native/*
