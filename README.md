@@ -1,6 +1,8 @@
 # DecimalRs
 
-**TODO: Add description**
+⚠️ This Library is not ready to be used.
+This is an early concept for an alternative approach to [mpdecimal](https://github.com/SpiffInc/mpdecimal).
+It aims to provide some advanced functionality for fixed-precision decimal math, but with the use of rustler to aid in memory safety and correctness.
 
 ## Installation
 
