@@ -1,18 +1,9 @@
 defmodule DecimalRs do
-  @moduledoc """
-  Documentation for `DecimalRs`.
-  """
+  alias DecimalRs.Nif
 
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> DecimalRs.hello()
-      :world
-
-  """
-  def hello do
-    :world
+  def pow(%Decimal{} = base, %Decimal{} = exponent) do
+    Decimal.to_string(base, :scientific)
+    |> Nif.powd(Decimal.to_string(exponent, :scientific))
+    |> Decimal.new()
   end
 end
